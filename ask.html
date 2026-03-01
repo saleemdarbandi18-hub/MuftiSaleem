@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question | Darul Ifta Mufti Saleem Ullah</title>
+    <meta name="description"
+        content="Submit your Islamic questions to Mufti Saleem Ullah and get authentic answers based on the Quran and Sunnah.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 4rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: var(--transition);
+            background: var(--light);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(15, 76, 58, 0.1);
+            background: var(--white);
+        }
+
+        textarea.form-control {
+            min-height: 200px;
+            resize: vertical;
+            font-family: var(--font-ur);
+            direction: rtl;
+            font-size: 1.25rem;
+        }
+
+        .form-text {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            margin-top: 0.5rem;
+        }
+
+        .rules-box {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .rules-box h4 {
+            color: var(--secondary-hover);
+            margin-bottom: 1rem;
+        }
+
+        .rules-list {
+            list-style-position: inside;
+            color: var(--dark);
+        }
+
+        .rules-list li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-text">
+                    <h1>Darul Ifta</h1>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="fatwa.html">Fatawa</a>
+                <a href="contact.html">Contact</a>
+                <a href="ask.html" class="btn btn-primary" style="background-color: var(--primary-light);">Ask
+                    Question</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">Ask a Question</h1>
+            <p>Submit your query to Darul Ifta for an authentic Islamic ruling (Fatwa).</p>
+            <h2 class="ur-text" dir="rtl" style="margin-top: 1rem; color: var(--secondary);">اپنا سوال دارالافتاء بھیجیں
+            </h2>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="form-container">
+
+            <div class="rules-box">
+                <h4>Important Guidelines</h4>
+                <ul class="rules-list">
+                    <li>Ensure your question is clear and concise.</li>
+                    <li>If asking in Urdu, you can use the Urdu keyboard layout.</li>
+                    <li>For complex business or inheritance matters, please provide all relevant details.</li>
+                    <li>Answers may take 3-7 working days depending on the research required.</li>
+                </ul>
+            </div>
+
+            <!-- Using basic Formspree action pattern as standard for static sites -->
+            <form action="https://formspree.io/f/your_form_endpoint" method="POST">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Abdullah Ahmad"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com"
+                            required>
+                        <div class="form-text">We'll use this to send you the Fatwa notification.</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="city" class="form-label">City, Country (Optional)</label>
+                    <input type="text" id="city" name="city" class="form-control" placeholder="e.g. Lahore, Pakistan">
+                </div>
+
+                <div class="form-group">
+                    <label for="category" class="form-label">Related Category</label>
+                    <select id="category" name="category" class="form-control ur-text" dir="rtl" required
+                        style="font-size: 1.1rem; appearance: auto; -webkit-appearance: auto; padding-right: 1rem;">
+                        <option value="" disabled selected>منتخب کریں...</option>
+                        <optgroup label="عبادات">
+                            <option value="طہارت">طہارت</option>
+                            <option value="نماز">نماز</option>
+                            <option value="روزہ">روزہ</option>
+                            <option value="زکوٰۃ">زکوٰۃ و صدقات</option>
+                            <option value="حج و عمرہ">حج و عمرہ</option>
+                        </optgroup>
+                        <optgroup label="معاملات">
+                            <option value="خرید و فروخت">خرید و فروخت</option>
+                            <option value="اسلامی بینکاری">اسلامی بینکاری</option>
+                            <option value="جدید مالی معاملات">جدید مالی معاملات</option>
+                        </optgroup>
+                        <optgroup label="عائلی مسائل">
+                            <option value="نکاح">نکاح</option>
+                            <option value="طلاق">طلاق و خلع</option>
+                            <option value="وراثت">وراثت</option>
+                        </optgroup>
+                        <optgroup label="حدود و تعزیرات">
+                            <option value="تعزیری احکام">تعزیری احکام</option>
+                        </optgroup>
+                        <optgroup label="معاصر و جدید مسائل">
+                            <option value="میڈیکل فقہ">میڈیکل فقہ</option>
+                            <option value="جدید ٹیکنالوجی">جدید ٹیکنالوجی</option>
+                        </optgroup>
+                        <optgroup label="متفرق">
+                            <option value="عقائد">عقائد و ایمانیات</option>
+                            <option value="دیگر">دیگر / متفرق</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="question" class="form-label">Your Question</label>
+                    <textarea id="question" name="question" class="form-control"
+                        placeholder="یہاں اپنا سوال تفصیل سے لکھیں..." required></textarea>
+                </div>
+
+                <div class="form-group" style="text-align: right; margin-top: 2rem;">
+                    <button type="submit" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2.5rem;">
+                        Submit Question
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom" style="border: none; padding-top: 0;">
+            <p>&copy; 2026 Online Darul Ifta | Mufti Saleem Ullah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

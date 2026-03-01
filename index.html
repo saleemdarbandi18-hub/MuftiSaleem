@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ur">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Darul Ifta | Mufti Saleem Ullah</title>
+  <meta name="description"
+    content="Official Online Darul Ifta of Mufti Saleem Ullah. Ask questions, read authentic Fatawa on various Islamic and modern issues based on Quran and Sunnah.">
+  <meta name="theme-color" content="#0F4C3A">
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema Markup for Darul Ifta -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.yourdomain.com/",
+    "name": "Mufti Saleem Ullah Online Darul Ifta",
+    "description": "Authentic Islamic Fatawa and guidance.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.yourdomain.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <!-- Geometric Islamic Icon -->
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0L24.4903 15.5097L40 20L24.4903 24.4903L20 40L15.5097 24.4903L0 20L15.5097 15.5097L20 0Z"
+              fill="#0F4C3A" />
+            <path
+              d="M20 8.28427L22.9289 17.0711L31.7157 20L22.9289 22.9289L20 31.7157L17.0711 22.9289L8.28427 20L17.0711 17.0711L20 8.28427Z"
+              fill="#D4AF37" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h1>Darul Ifta</h1>
+          <p>Mufti Saleem Ullah</p>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="fatwa.html">Fatawa</a>
+        <a href="contact.html">Contact</a>
+        <a href="ask.html" class="btn btn-primary">Ask Question</a>
+      </nav>
+
+      <!-- Mobile menu button (basic) -->
+      <button class="btn btn-outline mobile-menu-btn" style="display: none;">Menu</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2 class="hero-title-ur ur-text" dir="rtl">آن لائن دارالافتاء - مفتی سلیم اللہ</h2>
+      <p class="hero-subtitle">Providing authentic Islamic guidance and Fatawa based on the Quran, Sunnah, and
+        traditional Islamic Jurisprudence.</p>
+      <div class="hero-actions">
+        <a href="ask.html" class="btn btn-secondary">Ask a Question</a>
+        <a href="#categories" class="btn btn-outline" style="color: white; border-color: white;">Browse Categories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Box -->
+  <div class="container">
+    <div class="search-container">
+      <div class="search-header text-center" style="margin-bottom: 1rem; text-align: center;">
+        <h3 class="ur-text" style="color: var(--dark); font-size: 1.75rem;">ہمارے دارالافتاء سے تلاش کریں</h3>
+      </div>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search Fatawa (e.g., Namaz, Zakat, Trading)..." required>
+        <button type="submit" class="search-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Important & Frequent Issues Section -->
+  <section class="important-issues" style="background: var(--light); padding: 4rem 0;">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="ur-text" dir="rtl" style="color: var(--primary);">اہم اور کثیر الوقوع مسائل</h2>
+        <p>Most frequently asked and critically important issues</p>
+        <div class="divider"></div>
+      </div>
+      <div class="important-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <a href="fatwa.html" class="important-card ur-text" dir="rtl">
+          طبی و لائف انشورنس کا شرعی حکم
+        </a>
+        <a href="fatwa.html" class="important-card ur-text" dir="rtl">
+          ڈیجیٹل کرنسی (کرپٹو) میں سرمایہ کاری
+        </a>
+        <a href="fatwa.html" class="important-card ur-text" dir="rtl">
+          بینک کے منافع اور سود میں فرق
+        </a>
+        <a href="fatwa.html" class="important-card ur-text" dir="rtl">
+          آن لائن کاروبار کے احکام
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent & Popular Fatawa Section -->
+  <section class="container" style="padding: 2rem 1.5rem;">
+    <div class="section-title">
+      <h2>Recent Fatawa</h2>
+      <p>Latest answers and guidance provided by the Darul Ifta</p>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Category Filter Demo UI -->
+    <div class="category-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="namaz">Namaz</button>
+      <button class="filter-btn" data-filter="zakat">Zakat</button>
+      <button class="filter-btn" data-filter="finance">Islamic Finance</button>
+    </div>
+
+    <!-- Fatawa Grid -->
+    <div class="fatawa-grid">
+      <!-- Fatwa Item 1 -->
+      <div class="fatwa-card" data-category="namaz">
+        <div class="fatwa-meta">
+          <span class="fatwa-number">FM-2026-001</span>
+          <span class="cat-label cat-namaz" style="background-color: var(--cat-namaz);">عبادات</span>
+        </div>
+        <h3 class="fatwa-title ur-text" dir="rtl">سفر میں نماز قصر کرنے کے احکام کیا ہیں؟</h3>
+        <p class="fatwa-excerpt ur-text" dir="rtl">مسافر کے لیے قصر نماز پڑھنا واجب ہے، اور اس کی مسافت شرعی کی
+          تفصیلات...</p>
+        <div class="fatwa-tags" dir="rtl">
+          <span class="tag">#نماز</span>
+          <span class="tag">#قصر</span>
+          <span class="tag">#سفر</span>
+        </div>
+        <div class="fatwa-footer">
+          <span style="color: var(--gray-500); font-size: 0.875rem;">25 Feb 2026</span>
+          <a href="fatwa.html" class="read-more">Read Fatwa &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Fatwa Item 2 -->
+      <div class="fatwa-card" data-category="zakat">
+        <div class="fatwa-meta">
+          <span class="fatwa-number">FM-2026-002</span>
+          <span class="cat-label cat-zakat" style="background-color: var(--cat-zakat);">عبادات</span>
+        </div>
+        <h3 class="fatwa-title ur-text" dir="rtl">پرائز بانڈز پر زکوۃ کی ادائیگی کا کیا حکم ہے؟</h3>
+        <p class="fatwa-excerpt ur-text" dir="rtl">پرائز بانڈز کی اصل رقم پر زکوۃ ادا کرنا لازم ہے، لیکن انعام کی رقم کا
+          حکم مختلف ہے...</p>
+        <div class="fatwa-tags" dir="rtl">
+          <span class="tag">#زکوۃ</span>
+          <span class="tag">#پرائز_بانڈ</span>
+          <span class="tag">#مالی_عبادات</span>
+        </div>
+        <div class="fatwa-footer">
+          <span style="color: var(--gray-500); font-size: 0.875rem;">20 Feb 2026</span>
+          <a href="fatwa.html" class="read-more">Read Fatwa &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Fatwa Item 3 -->
+      <div class="fatwa-card" data-category="finance">
+        <div class="fatwa-meta">
+          <span class="fatwa-number">FM-2026-003</span>
+          <span class="cat-label cat-finance" style="background-color: var(--cat-finance);">معاملات</span>
+        </div>
+        <h3 class="fatwa-title ur-text" dir="rtl">کریپٹو کرنسی میں سرمایہ کاری کی شرعی حیثیت</h3>
+        <p class="fatwa-excerpt ur-text" dir="rtl">موجودہ دور میں ڈیجیٹل کرنسی کے مسائل اور ان پر علماء کی تحقیق...</p>
+        <div class="fatwa-tags" dir="rtl">
+          <span class="tag">#معاملات</span>
+          <span class="tag">#کرپٹو</span>
+          <span class="tag">#جدید_مسائل</span>
+        </div>
+        <div class="fatwa-footer">
+          <span style="color: var(--gray-500); font-size: 0.875rem;">15 Feb 2026</span>
+          <a href="fatwa.html" class="read-more">Read Fatwa &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Classical Fiqh Structure Categories -->
+  <section id="categories" class="categories-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="ur-text" dir="rtl">فقہی ابواب (Classical Fiqh Categories)</h2>
+        <p>مستند فقہی ترتیب کے مطابق مسائل کی تلاش</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="fiqh-accordion" dir="rtl">
+
+        <!-- Category 1 -->
+        <div class="accordion-item active">
+          <button class="accordion-header ur-text">
+            <span class="acc-title">۱. عبادات</span>
+            <span class="acc-icon">-</span>
+          </button>
+          <div class="accordion-content" style="max-height: 500px;">
+            <p class="cat-intro ur-text">بندے اور اللہ کے درمیان تعلق، طہارت اور جسمانی و مالی عبادات کے احکام۔</p>
+            <div class="subcat-grid">
+              <a href="#" class="subcat-link ur-text">طہارت (پاکیزگی)</a>
+              <a href="#" class="subcat-link ur-text">نماز (الصلوۃ)</a>
+              <a href="#" class="subcat-link ur-text">روزہ (الصوم)</a>
+              <a href="#" class="subcat-link ur-text">زکوٰۃ و صدقات</a>
+              <a href="#" class="subcat-link ur-text">حج و عمرہ</a>
+              <a href="#" class="subcat-link ur-text">اعتکاف</a>
+              <a href="#" class="subcat-link ur-text">قربانی و عقیقہ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header ur-text">
+            <span class="acc-title">۲. معاملات</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="cat-intro ur-text">انسانی معیشت، تجارت اور لین دین کے شرعی اصول و ضوابط۔</p>
+            <div class="subcat-grid">
+              <a href="#" class="subcat-link ur-text">خرید و فروخت</a>
+              <a href="#" class="subcat-link ur-text">سود سے متعلق مسائل</a>
+              <a href="#" class="subcat-link ur-text">کرایہ داری</a>
+              <a href="#" class="subcat-link ur-text">شراکت و مضاربت</a>
+              <a href="#" class="subcat-link ur-text">اسلامی بینکاری</a>
+              <a href="#" class="subcat-link ur-text">حلال سرٹیفکیشن</a>
+              <a href="#" class="subcat-link ur-text">جدید مالی معاملات</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header ur-text">
+            <span class="acc-title">۳. عائلی مسائل</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="cat-intro ur-text">خاندانی نظام، شادی بیاہ اور رشتوں کے حقوق و فرائض۔</p>
+            <div class="subcat-grid">
+              <a href="#" class="subcat-link ur-text">نکاح</a>
+              <a href="#" class="subcat-link ur-text">طلاق</a>
+              <a href="#" class="subcat-link ur-text">خلع و تفریق</a>
+              <a href="#" class="subcat-link ur-text">عدت</a>
+              <a href="#" class="subcat-link ur-text">نان و نفقہ</a>
+              <a href="#" class="subcat-link ur-text">وراثت (ترکہ)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="accordion-item">
+          <button class="accordion-header ur-text">
+            <span class="acc-title">۴. حدود و تعزیرات</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="cat-intro ur-text">جرائم کی سزائیں اور معاشرتی امن و امان کے احکام۔</p>
+            <div class="subcat-grid">
+              <a href="#" class="subcat-link ur-text">حدود شرعیہ</a>
+              <a href="#" class="subcat-link ur-text">قصاص</a>
+              <a href="#" class="subcat-link ur-text">دیت (خون بہا)</a>
+              <a href="#" class="subcat-link ur-text">تعزیری احکام</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header ur-text">
+            <span class="acc-title">۵. معاصر و جدید مسائل</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="cat-intro ur-text">موجودہ دور کے نت نئے پیدا ہونے والے مسائل اور ان کا شرعی حل۔</p>
+            <div class="subcat-grid">
+              <a href="#" class="subcat-link ur-text">میڈیکل فقہ</a>
+              <a href="#" class="subcat-link ur-text">سوشل میڈیا اور انٹرنیٹ</a>
+              <a href="#" class="subcat-link ur-text">کریپٹو کرنسی</a>
+              <a href="#" class="subcat-link ur-text">جدید ٹیکنالوجی اور اے آئی</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header ur-text">
+            <span class="acc-title">۶. متفرق فتاویٰ</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p class="cat-intro ur-text">عقائد، اخلاقیات اور دیگر متنوع موضوعات پر فتاویٰ۔</p>
+            <div class="subcat-grid">
+              <a href="#" class="subcat-link ur-text">عقائد و ایمانیات</a>
+              <a href="#" class="subcat-link ur-text">آداب و اخلاقیات</a>
+              <a href="#" class="subcat-link ur-text">تصوف و سلوک</a>
+              <a href="#" class="subcat-link ur-text">متفرق</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scholar Intro -->
+  <section class="scholar-intro">
+    <div class="container scholar-container">
+      <div class="scholar-img">
+        <!-- Using a placeholder for dummy profile -->
+        <img src="https://via.placeholder.com/300x300.png?text=Mufti+Image" alt="Mufti Saleem Ullah">
+      </div>
+      <div class="scholar-info">
+        <h3>Mufti Saleem Ullah</h3>
+        <div class="designation">Founder & Head Mufti, Darul Ifta</div>
+        <p>With extensive years of study in classical Islamic jurisprudence and specialized training in modern financial
+          systems (Takhassus fil Fiqh), Mufti Saleem Ullah bridges the gap between traditional Islamic law and
+          contemporary challenges. He has authored multiple research papers on modern issues and provides dedicated
+          guidance to Muslims globally.</p>
+        <a href="about.html" class="btn btn-primary">Read Full Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What People Say</h2>
+        <p>Testimonials from users who benefited from our services.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <p class="testi-text">"The fatwa provided was extremely detailed, referencing authentic sources. It gave
+            clarity to our complex business partnership issue."</p>
+          <div class="testi-author">
+            <div class="testi-author-info">
+              <h4>Abdullah Khawaja</h4>
+              <p>Karachi, Pakistan</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-text">"Fast response time and very professional layout. The PDF print feature makes it very
+            easy to share the fatwa with family members."</p>
+          <div class="testi-author">
+            <div class="testi-author-info">
+              <h4>Umar Farooq</h4>
+              <p>London, UK</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <p class="testi-text">"Ma sha Allah, excellent service. The answers are grounded in deep scholarship but
+            explained in a way that is easy to understand."</p>
+          <div class="testi-author">
+            <div class="testi-author-info">
+              <h4>Zainab Ali</h4>
+              <p>Dubai, UAE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="grid-column: span 2;">
+          <div class="logo-text" style="margin-bottom: 1.5rem;">
+            <h1 style="color: var(--secondary); font-size: 1.5rem;">Darul Ifta</h1>
+            <p style="color: var(--white);">Mufti Saleem Ullah</p>
+          </div>
+          <p>Providing authentic Islamic guidance based on the Quran, Sunnah, and classical jurisprudence. Dedicated to
+            offering clear answers to contemporary Muslim challenges.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">F</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="YouTube">Y</a>
+            <a href="#" aria-label="WhatsApp">W</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Important Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="ask.html">Ask a Question</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Categories</h4>
+          <ul class="footer-links ur-text" dir="rtl" style="font-size: 1.1rem; padding-right: 0;">
+            <li><a href="#">عبادات (نماز، روزہ، زکوٰۃ)</a></li>
+            <li><a href="#">معاملات (خرید و فروخت)</a></li>
+            <li><a href="#">عائلی مسائل (نکاح و طلاق)</a></li>
+            <li><a href="#">حدود و تعزیرات</a></li>
+            <li><a href="#">معاصر و جدید مسائل</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Online Darul Ifta | Mufti Saleem Ullah. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
